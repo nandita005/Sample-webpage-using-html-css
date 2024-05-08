@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background-color:pink;           
+        }
+        .container{
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+        .container h1{
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        form input,
+        form textarea{
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        form input:focus,
+        form textarea:focus{
+            outline: none;
+            box-shadow: 0 0 5px #333;
+        }
+        form button{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        form button:hover{
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: black;
+    color: aliceblue;
+}
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover ,
+.navbar a.active{
+    color: #ffb3b3;
+}
+
+.BIO{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.Bio-content{
+    max-width: 600px;
+}
+.Bio-content h1{
+    font-size:56px;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    line-height: 1.2;
+    margin: 10px 0 20px;
+}
+.Bio-content h3{
+    font-size: 32px;
+    font-weight: 500;
+    color: #ffb3b3;
+    margin: 10px 0 20px;
+}
+.Bio-content p{
+    font-size: 16px;
+    margin: 10px 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Bio-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #ffb3b3;
+    border:2px solid #ffb3b3;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: transparent;
+    color: #ffb3b3;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: bisque;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display:flex;
+    justify-content: space-between;
+}
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ffb3b3;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffb3b3;
+    text-decoration: none;
+}
+body {
+    position: relative;
+}
+
+.r-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 700px;
+    height: 100vh; 
+}
+
